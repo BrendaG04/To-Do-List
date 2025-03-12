@@ -1,0 +1,308 @@
+body{
+    background-color: #BDBBB6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+    margin: 50px;
+}
+h1{
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff5e00;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 4px #000000;
+    margin: 70px;
+}
+.progress-container{
+    align-items: center;
+    font-size: 2.0rem;
+    margin: 10px;
+}
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+    border: 1px solid #ccc;
+}
+progress::-webkit-progress-bar {
+    background-color: #eee8e8;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50; 
+    border-radius: 10px;
+}
+
+
+
+.todoContainer{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.listContainer{
+    background: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 30px auto 20px;
+    padding: 30px 30px 30px ;
+    border-radius: 15px ;
+}
+.todoContainer input{
+    padding: 10px ;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-weight: 14px;
+}
+.todoContainer button{
+    font-size: 0.80rem;
+    font-weight: bold;
+    padding: 7px 9px;
+    margin: 5px;
+    min-width: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+.addTaskBtn {
+    background-color: #045F62;
+}
+.addTaskBtn:hover {
+    background-color: hsl(182, 93%, 15%);
+}
+.deleteTaskBtn {
+    background-color: hsl(9, 100%, 45%);
+}
+.deleteTaskBtn:hover {
+    background-color:  hsl(9, 100%, 35%);
+}
+.editTaskBtn {
+    background-color: #045F62;
+}
+.editTaskBtn:hover {
+    background-color: hsl(182, 93%, 15%);
+}
+ul li{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 12px 10px 15px 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+ul li .task-text {
+    flex-grow: 1;  
+    text-align: left;
+}
+ul li input[type="checkbox"] {
+    margin-right: 15px; /* Space between the checkbox and the task text */
+    width: 20px;
+    height: 20px; 
+}
+ul li input[type="checkbox"]:checked + .task-text {
+    text-decoration: line-through;
+    color: rgb(73, 72, 72);
+}
+ul li button {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+#clock-body{
+    background-image: url(images/digitalclockBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(7px);
+    background-color: rgba(185, 179, 179, 0.1);
+}
+#clock-body a{
+    color: white;           
+    padding: 10px 20px;     
+    margin-top: 20px;      
+    font-size: 18px;  
+}
+
+
+
+#stopwatchDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #73877B;
+    padding-bottom: 25px;
+    border: 10px ;
+    border-radius: 25px;
+}
+#myH1{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff5e00;
+    text-shadow: 2px 2px 2px black;
+    margin: 40px;
+}
+#stopwatchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: white;
+}
+#stopwatchDisplay{
+    font-size: 4.0rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ff5e00;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 25px;
+}
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px;
+    min-width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+#startBtn {
+    background-color: hsl(120, 100%, 25%);
+}
+#startBtn:hover {
+    background-color: hsl(120, 100%, 15%);
+}
+#stopBtn {
+    background-color: hsl(60, 80%, 50%);
+}
+#stopBtn:hover {
+    background-color: hsl(60, 80%, 40%);
+}
+#resetBtn {
+    background-color: hsl(9, 100%, 45%);
+}
+#resetBtn:hover {
+    background-color: hsl(9, 100%, 35%);
+}
+
+.timeRecordContainer{
+    background: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 30px auto 20px;
+    padding: 30px;
+    border-radius: 15px;
+    color: #045F62;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+        margin: 30px 0;
+    }
+    .todoContainer input {
+        width: 80%;
+        font-size: 14px; 
+    }
+    .todoContainer button {
+        font-size: 0.75rem; 
+        padding: 6px 8px;
+    }
+    .listContainer {
+        padding: 20px;
+        max-width: 90%; 
+    }
+    ul li {
+        font-size: 20px; 
+    }
+    .progress-container {
+        font-size: 1.8rem; 
+    }
+    #stopwatchDiv {
+        padding-bottom: 15px;
+        font-size: 2.0rem; 
+    }
+    #stopwatchContainer {
+        padding: 15px; 
+        width: 80%; 
+    }
+    #stopwatchDisplay {
+        font-size: 2.5rem; 
+        margin-bottom: 10px;
+    }
+    #controls button {
+        font-size: 1.2rem; 
+        padding: 8px 12px;
+    }
+    .timeRecordContainer{
+        padding: 15px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .todoContainer input {
+        width: 90%; 
+    }
+    h1 {
+        font-size: 2.5rem; 
+        margin: 20px 0;
+    }
+    ul li {
+        font-size: 18px; 
+    }
+    #stopwatchDisplay {
+        font-size: 2.0rem;
+        margin-bottom: 5px;
+    }
+    #stopwatchContainer {
+        padding: 15px; 
+        width: 80%; 
+    }
+    #controls button {
+        font-size: 1rem;
+        padding: 6px 10px; 
+    }
+    .timeRecordContainer{
+        padding: 10px;
+        width: 80%;
+        font-size: 2.0rem;
+        margin-bottom: 5px;
+    }
+}
