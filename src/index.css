@@ -1,0 +1,391 @@
+body{
+  background: radial-gradient(circle, #b8b7b4, #b8b7b4, #3d94975b);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  text-align: center;
+  margin: 0px;
+}
+nav {
+  background-color: hsl(182, 92%, 20%);
+  padding: 20px 0;
+  box-shadow: 0 4px 2px -2px gray; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+}
+nav ul li {
+  margin: 0 20px; 
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s; 
+}
+nav ul li a:hover {
+  color: #ff5e00;
+  text-decoration: underline; 
+}
+
+h1{
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff5e00;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 4px 4px 4px #000000;
+  margin: 70px;
+}
+.progress-container{
+  align-items: center;
+  font-size: 2.0rem;
+  margin: 10px;
+}
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  appearance: none;
+  border: 1px solid #ccc;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee8e8;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4caf50; 
+  border-radius: 10px;
+}
+
+
+
+.todoContainer{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.listContainer{
+  background: white;
+  width: 100%;
+  max-width: 750px;
+  margin: 30px auto 20px;
+  padding: 30px 30px 30px ;
+  border-radius: 15px ;
+}
+.todoContainer input{
+  padding: 10px ;
+  width: 400px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  font-weight: 14px;
+}
+.todoContainer button{
+  font-size: 1.30rem;
+  font-weight: bold;
+  padding: 7px 9px;
+  margin: 5px;
+  min-width: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.addTaskBtn {
+  background-color: hsl(182, 92%, 20%);
+}
+.addTaskBtn:hover {
+  background-color: hsl(182, 92%, 5%);
+}
+.deleteTaskBtn {
+  background-color: hsl(9, 100%, 45%);
+}
+.deleteTaskBtn:hover {
+  background-color:  hsl(9, 100%, 35%);
+}
+.editTaskBtn {
+  background-color: hsl(182, 92%, 20%);
+}
+.editTaskBtn:hover {
+  background-color: hsl(182, 92%, 5%);
+}
+.moveDownBtn{
+  background-color: hsl(182, 92%, 20%);
+}
+.moveDownBtn:hover {
+  background-color: hsl(182, 92%, 5%);
+}
+.moveUpBtn{
+  background-color: hsl(182, 92%, 20%);
+}
+.moveUpBtn:hover {
+  background-color: hsl(182, 92%, 5%);
+}
+
+ol {
+  padding: 0%;
+}
+ol li{
+  list-style-type: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 12px 10px 15px 10px;
+  user-select: none;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid hsla(0, 1%, 43%, 0.788);
+  border-radius: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+ol li .task-text {
+  text-align: left;
+  flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: calc(100% - 120px);
+}
+
+ol li input[type="checkbox"] {
+  margin-right: 15px; 
+  width: 20px;
+  height: 20px; 
+}
+ol li input[type="checkbox"]:checked + .task-text {
+  text-decoration: line-through;
+  color: rgb(73, 72, 72);
+}
+
+
+
+
+
+
+
+
+
+.stopwatchDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(182, 92%, 22%);
+  padding-bottom: 25px;
+  border: 10px ;
+  border-radius: 25px;
+  margin: 50px;
+}
+#myH1{
+  font-size: 3.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff5e00;
+  text-shadow: 2px 2px 2px black;
+  margin: 40px;
+}
+.stopwatchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border: 2px solid;
+  border-radius: 25px;
+  background-color: white;
+}
+.stopwatchDisplay{
+  font-size: 4.0rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #ff5e00;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 25px;
+}
+.controls button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 5px;
+  min-width: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+#startBtn {
+  background-color: hsl(120, 100%, 25%);
+}
+#startBtn:hover {
+  background-color: hsl(120, 100%, 15%);
+}
+#stopBtn {
+  background-color: hsl(60, 80%, 50%);
+}
+#stopBtn:hover {
+  background-color: hsl(60, 80%, 40%);
+}
+#resetBtn {
+  background-color: hsl(9, 100%, 45%);
+}
+#resetBtn:hover {
+  background-color: hsl(9, 100%, 35%);
+}
+#recordBtn {
+  background-color: hsl(229, 48%, 47%);
+}
+#recordBtn:hover {
+  background-color: hsl(229, 48%, 35%);
+}
+.timeRecordContainer{
+  background: white;
+  width: 100%;
+  max-width: 540px;
+  margin: 30px auto 20px;
+  padding: 30px;
+  border-radius: 15px;
+  color: #045F62;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.timeRecordContainer ol li{
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 30px 0;
+  }
+  .todoContainer input {
+      width: 80%;
+      font-size: 1rem; 
+  }
+  .todoContainer button {
+      font-size: 0.75rem; 
+      padding: 6px 10px;
+      max-width: 60%;
+  }
+  .listContainer {
+      padding: 20px;
+      max-width: 90%; 
+  }
+  ol li {
+      font-size: 18px; 
+  }
+  ol li span {
+    flex: 1; 
+    overflow-wrap: break-word; 
+  }
+  .progress-container {
+      font-size: 1.8rem; 
+  }
+  .stopwatchDiv {
+      padding-bottom: 15px;
+      font-size: 2.0rem; 
+      margin: 20px;
+  }
+  .stopwatchContainer {
+      padding: 15px; 
+      width: 80%; 
+  }
+  .stopwatchDisplay {
+      font-size: 2.5rem; 
+      margin-bottom: 10px;
+  }
+  .controls{
+    gap: 5px;
+  }
+  .controls button {
+      font-size: 1.2rem; 
+      padding: 8px 12px;
+  }
+  .timeRecordContainer{
+      padding: 15px;
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2.5rem; 
+      margin: 20px 0;
+  }
+  .todoContainer li {
+    font-size: 1.5rem;
+  }
+  .todoContainer input {
+      width: 90%;
+      font-size: 1rem; 
+  }
+  .todoContainer button{
+      font-size: 0.85rem; 
+      padding: 4px 6px;
+      max-width: 50px;
+  }
+  .listContainer {
+      padding: 20px;
+      max-width: 90%; 
+  }
+  ol li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 6px;
+    border-bottom: 1px solid #ccc;
+    gap: 5px;  
+  }
+  ol li span {
+    flex: 1;
+    overflow-wrap: break-word;
+  }
+  .stopwatchDiv {
+    padding: 10px;
+    margin: 10px ;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .stopwatchDisplay {
+      font-size: 2.0rem;
+      margin-bottom: 5px;
+  }
+  .stopwatchContainer {
+      margin-top: 0px;
+      padding: 10px; 
+      width: 90%; 
+  }
+  .controls button {
+      font-size: 1rem;
+      padding: 6px 10px; 
+  }
+  .timeRecordContainer{
+      padding: 10px;
+      margin: 10px;
+      width: 90%;
+      font-size: 1.00rem;
+      margin-bottom: 5px;
+  }
+}
