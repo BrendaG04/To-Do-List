@@ -1,5 +1,6 @@
 # 📌 To-Do List  
 (learning react & javascript)
+
 A simple and interactive To-Do List app built with React. This project allows users to add, edit, delete, and track tasks efficiently. It also features a digital clock that shows the current time. 
 
 ## ✨ Features  
